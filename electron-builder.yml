@@ -1,0 +1,20 @@
+appId: com.voltade.froom
+productName: Froom
+icon: build/icon.png
+directories:
+  buildResources: build
+  output: dist
+files:
+  - out/**
+  - package.json
+  - resources/**
+npmRebuild: false
+asarUnpack:
+  - node_modules/ffmpeg-static/**
+  - node_modules/uiohook-napi/**
+win:
+  target: nsis
+nsis:
+  oneClick: false
+  allowToChangeInstallationDirectory: true
+  createDesktopShortcut: true
