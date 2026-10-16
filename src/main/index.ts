@@ -561,7 +561,7 @@ function registerMediaProtocol(): void {
 
 // ---------- app ----------
 
-app.setAppUserModelId('com.voltade.froom')
+app.setAppUserModelId('com.froom.app')
 
 app.whenReady().then(() => {
   Menu.setApplicationMenu(null)
